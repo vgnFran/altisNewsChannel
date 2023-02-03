@@ -3,8 +3,16 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+$mainColor: #B52121;
+$secondColor: #ECECEC;
+
+
+
+
+
 nav{
-    color: white;
+    color: $secondColor;
     display: flex;
     align-items: center;
     img{
@@ -19,9 +27,9 @@ nav{
         display: flex;
         width: 100%;
         justify-content: space-between;
-        background-color: red;
-        border-top-left-radius: 24px;
-        border-bottom-left-radius: 24px;
+        background-color: $mainColor;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;
         .time{
             display: flex;
             align-items: center;
@@ -41,22 +49,39 @@ nav{
         }
         .search{
             display: flex;
+            background-color: #eb2626;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            align-items: center;
             .icon{
-                width: 40px;
-                height: 40px;
+                width: 36px;
+                height: 36px;
                 border-radius: 20px;
-                background-color: white;
+                background-color: $secondColor;
                 display: flex;
+                justify-content: center;
+                align-items: center;
+
                 i{
-                    color: black;
-                    font-size: 20px;
-                    margin-left: 8px;
-                    margin-top: 6px;
+                    color: rgb(179, 157, 157);
+                    font-size: 22px;
+                    
                 }
             }
             input{
-                border: 1px solid gray;
-                border-radius: 10px;
+                border: none;
+                border-top-right-radius: 40px;
+                border-bottom-right-radius: 40px;
+                height: 38px;
+                background-color: #eb2626;
+                display: flex;
+                
+            }
+            ::placeholder{
+                color: $secondColor;
+                padding-left: 20px;
             }
         }
     }
@@ -69,10 +94,15 @@ nav{
             text-transform: uppercase;
             font-size: 20px;
             list-style: none;
-            margin-right: 20px;
+            margin-right: 30px;
+            cursor: pointer;
         }
         i{
             font-size: 36px;
+            cursor: pointer;
         }
     }
 }
+
+
+
