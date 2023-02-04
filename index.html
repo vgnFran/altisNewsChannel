@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altis News Channel</title>
-    <link rel="stylesheet" href="scss/styles.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
     <header>
@@ -47,38 +49,85 @@
         </nav>
     </header>
 
+  
     <main>
-        <div class="carrousel">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/noticias1.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/noticias2.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/noticias3.jpg" alt="">
-                    </div>
+        
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/noticias1.jpg" alt="">
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                    <img src="images/noticias2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/noticias3.jpg" alt="">
+                </div>
             </div>
-
-
-
-
-
-
-
-
-
+            <div class="swiper-pagination"></div>
         </div>
+
+       
+
+        <section class="news">
+
+          <div class="noticia">
+            <div class="img-new">
+              <img src="images/noticias1.jpg" alt="">
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Acordeón artículo #1
+                  </button>
+                </h2>
+  
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nulla perferendis veniam maiores laboriosam voluptatum impedit sit ratione, et delectus animi quidem officia aut at expedita, amet rerum. Sunt?
+                    Est possimus beatae deserunt nulla, fuga, repellat suscipit iste facilis veritatis pariatur fugit maiores expedita nobis consequatur. Eum, quod debitis! Nisi saepe commodi dolores adipisci repellendus minima necessitatibus sint dicta?
+                    Veritatis
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="noticia">
+
+          </div>
+
+          
+
+
+        </section>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
     </main>
 
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
