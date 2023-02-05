@@ -26,17 +26,17 @@
      object-fit: cover;
 }
 
-nav {
+.nav-cont {
   color: #ECECEC;
   display: flex;
   align-items: center;
 }
-nav img {
+.nav-cont img {
   width: 100px;
   border-radius: 100px;
   margin-left: 20px;
 }
-nav .navbar {
+.nav-cont .navbar-news {
   height: 60px;
   align-items: center;
   margin-left: 20px;
@@ -47,24 +47,26 @@ nav .navbar {
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
 }
-nav .navbar .time {
+.nav-cont .navbar-news .time {
   display: flex;
   align-items: center;
 }
-nav .navbar .time i {
+.nav-cont .navbar-news .time i {
   font-size: 30px;
   color: gold;
 }
-nav .left-nav {
+.nav-cont .left-nav {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  text-align: center;
 }
-nav .left-nav p {
+.nav-cont .left-nav p {
   font-size: 18px;
   margin-right: 20px;
+  margin-bottom: 0;
 }
-nav .left-nav .search {
+.nav-cont .left-nav .search {
   display: flex;
   background-color: #eb2626;
   border-top-right-radius: 40px;
@@ -73,7 +75,7 @@ nav .left-nav .search {
   border-bottom-left-radius: 40px;
   align-items: center;
 }
-nav .left-nav .search .icon {
+.nav-cont .left-nav .search .icon {
   width: 36px;
   height: 36px;
   border-radius: 20px;
@@ -82,11 +84,11 @@ nav .left-nav .search .icon {
   justify-content: center;
   align-items: center;
 }
-nav .left-nav .search .icon i {
+.nav-cont .left-nav .search .icon i {
   color: rgb(179, 157, 157);
   font-size: 22px;
 }
-nav .left-nav .search input {
+.nav-cont .left-nav .search input {
   border: none;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -94,56 +96,78 @@ nav .left-nav .search input {
   background-color: #eb2626;
   display: flex;
 }
-nav .left-nav .search ::-moz-placeholder {
+.nav-cont .left-nav .search ::-moz-placeholder {
   color: #ECECEC;
   padding-left: 20px;
 }
-nav .left-nav .search :-ms-input-placeholder {
+.nav-cont .left-nav .search :-ms-input-placeholder {
   color: #ECECEC;
   padding-left: 20px;
 }
-nav .left-nav .search ::placeholder {
+.nav-cont .left-nav .search ::placeholder {
   color: #ECECEC;
   padding-left: 20px;
 }
-nav ul {
+.nav-cont ul {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  margin-bottom: 0;
 }
-nav ul li {
+.nav-cont ul li {
   text-transform: uppercase;
   font-size: 20px;
   list-style: none;
   margin-right: 30px;
   cursor: pointer;
 }
-nav ul i {
+.nav-cont ul i {
   font-size: 36px;
   cursor: pointer;
 }
 
 .news {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 .news .noticia {
-  width: 500px;
-  height: 300px;
+  width: 780px;
+  height: 500px;
   background-color: aqua;
   line-height: 0;
 }
 .news .noticia img {
   width: 100%;
-  height: 300px;
+  height: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news #new1 {
+  margin-right: 10px;
+}
+.news #new2 {
+  margin-left: 10px;
 }
 
-.ac {
-  margin-top: 0px;
-  margin-bottom: 20px;
+.accordion-body {
+  line-height: normal;
 }
-.ac .ac-trigger {
-  color: red;
+
+.accordion-header {
+  padding-left: 36%;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+  background-color: white;
+  color: black;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+  box-shadow: none;
 }/*# sourceMappingURL=styles.css.map */

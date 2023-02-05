@@ -7,7 +7,6 @@
 $mainColor: #B52121;
 $secondColor: #ECECEC;
 
-@import "/node_modules/bootstrap/scss/accordion";
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -34,7 +33,7 @@ $secondColor: #ECECEC;
 
 
 
-nav{
+.nav-cont{
     color: $secondColor;
     display: flex;
     align-items: center;
@@ -43,7 +42,7 @@ nav{
         border-radius: 100px;
         margin-left: 20px;
     }
-    .navbar{
+    .navbar-news{
         height: 60px;
         align-items: center;
         margin-left: 20px;
@@ -66,9 +65,11 @@ nav{
         display: flex;
         align-items: center;
         margin-left: 20px;
+        text-align: center;
         p{
             font-size: 18px;
             margin-right: 20px;
+            margin-bottom: 0;
         }
         .search{
             display: flex;
@@ -112,6 +113,7 @@ nav{
         display: flex;
         align-items: center;
         margin-right: 20px;
+        margin-bottom: 0;
         li{
             
             text-transform: uppercase;
@@ -128,36 +130,49 @@ nav{
 }
 
 .news{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
 
     .noticia{
-        width: 500px;
-        height: 300px;
+        width: 780px;
+        height: 500px;
         background-color: aqua;
         line-height: 0;
         img{
             width: 100%;
-            height: 300px;
+            height: 460px;
+            object-fit: cover;
         }
+        
+    }
+    #new1{
+        margin-right: 10px;
+    }
+    #new2{
+        margin-left: 10px;
     }
 
 }
 
-
-
-
-
-.ac{
-    margin-top: 0px;
-    margin-bottom: 20px;
-    .ac-trigger{
-        color: red;
-    }
+.accordion-body{
+    line-height: normal;
 }
-    
 
+.accordion-header{
+    padding-left: 36%;
+}
 
+.accordion-button:focus{
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+    box-shadow:none;
+}

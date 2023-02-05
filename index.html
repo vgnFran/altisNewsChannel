@@ -16,13 +16,13 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="nav-cont">
 
             <div>
                 <img src="images/anc_logo.png" alt="altis-logo" id="logo-altis">
             </div>
 
-            <div class="navbar">
+            <div class="navbar-news">
 
                 <div class="left-nav">
                     <div class="time">
@@ -46,7 +46,7 @@
                 </ul>
 
             </div>
-        </nav>
+          </div>
     </header>
 
   
@@ -56,14 +56,14 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="images/noticias1.jpg" alt="">
+                    <img src="images/altis-banner.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <img src="images/noticias2.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
                     <img src="images/noticias3.jpg" alt="">
-                </div>
+                </div> -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -72,32 +72,44 @@
 
         <section class="news">
 
-          <div class="noticia">
+          <div class="noticia" id="new1">
+
             <div class="img-new">
-              <img src="images/noticias1.jpg" alt="">
+              <img src="images/ej-new1.jpg" alt="">
             </div>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Acordeón artículo #1
-                  </button>
-                </h2>
-  
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nulla perferendis veniam maiores laboriosam voluptatum impedit sit ratione, et delectus animi quidem officia aut at expedita, amet rerum. Sunt?
-                    Est possimus beatae deserunt nulla, fuga, repellat suscipit iste facilis veritatis pariatur fugit maiores expedita nobis consequatur. Eum, quod debitis! Nisi saepe commodi dolores adipisci repellendus minima necessitatibus sint dicta?
-                    Veritatis
-                  </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Noticia 1
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Este es el cuerpo del acordeón del segundo elemento.</strong> Está oculto de manera predeterminada, hasta que el complemento de Collapse agregue las clases apropiadas que usamos para diseñar cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultación a través de transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribir nuestras variables predeterminadas. También vale la pena señalar que casi cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
                 </div>
               </div>
             </div>
+
           </div>
 
 
-          <div class="noticia">
-
+          <div class="noticia" id="new2">
+            <div class="img-new">
+              <img src="images/ej-new2.jpg" alt="">
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                  Noticia 2
+                </button>
+              </h2>
+              <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Este es el cuerpo del acordeón del segundo elemento.</strong> Está oculto de manera predeterminada, hasta que el complemento de Collapse agregue las clases apropiadas que usamos para diseñar cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultación a través de transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribir nuestras variables predeterminadas. También vale la pena señalar que casi cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+                </div>
+              </div>
+            </div>
+            
           </div>
 
           

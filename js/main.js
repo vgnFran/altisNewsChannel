@@ -18,12 +18,3 @@ const swiper = new Swiper(".mySwiper", {
 
 
 
-// new Accordion('.accordion-container', {
-//     duration: 350,
-//     showMultiple: true,
-//   });
-
-// new Accordion('.accordion-container2', {
-// duration: 350,
-// showMultiple: true,
-// });
